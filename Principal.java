@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ap4;
+//package ap4;
 
 /**
  *
@@ -25,12 +25,20 @@ public class Principal {
        System.out.println(c1.tamanhoColecaoNaoNull());
            
        c1.inserir(new Professor ("TE", "Doutor", "Juliano2", "033"));
-       System.out.println(c1.dados[1].getNome());           
+       System.out.println(c1.dados[1].getNome());
+         c1.dados[1].setNome("Roberto");
        System.out.println(c1.tamanhoColecaoNaoNull());
+       
+        Professor ProfessorTeste = new Professor ("TE2", "Doutor2", "Juliano3", "038");
+        c1.inserir(ProfessorTeste);
+        System.out.println(c1.dados[1].getNome()); 
+        ProfessorTeste.setNome("RobertoSemColocarNoArray");
+        System.out.println(ProfessorTeste.getNome());
+        System.out.println(c1.dados[2].getNome()); 
+        System.out.println(c1.tamanhoColecaoNaoNull());
       
-       c1.inserir((new Aluno("23", "EC", "Juliano3", "034")));
-       System.out.println(c1.dados[2].getNome());
-       System.out.println(c1.tamanhoColecaoNaoNull());
+      
+       
       
  
         
