@@ -7,8 +7,8 @@ package ap4;
 
 public abstract class Pessoa {
 
-    private String nome;
-    private String cpf;
+    protected String nome;
+    protected String cpf;
    // private Date dataNasc;
   //  private String fone;
   //  private String celular;
